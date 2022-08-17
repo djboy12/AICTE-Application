@@ -22,7 +22,7 @@
                 <div class="header">
                   <a href="file:///D:/HTML/Home%20Page.html" class="logo">ASC</a>
                   <div class="header-right">
-                    <a class="active" href="file:///D:/HTML/Home%20Page.html>Home</a>
+                    <a class="active" href="file:///D:/HTML/Home%20Page.html">Home</a>
                     <a href="#contact">discussion</a>
                     <a href="#standard cirriculum">Standard cirriculum</a>
                     <a href="file:///D:/HTML/About%20Page.html">About</a>
@@ -97,7 +97,7 @@
       </div>
       
       <label for="confirm-psw"><b>Confirm Password</b></label>
-      <input id="psw1" name="psw1" type="password" placeholder="Repeat Password" required>
+      <input id="psw1" name="psw1" type="password" placeholder="Repeat Password" name="psw" required>
       
       <label for="past-quali"><b>Past Qualification:</b></label>
       <input type="file" id="my file" name="file name">
@@ -720,9 +720,6 @@ text-align: justify;
 
 <script>
   var myInput = document.getElementById("psw");
-  var myInput1 = document.getElementById("psw1");
-  var password = document.getElementById("psw").value;
-  var confirmpassword = document.getElementById("psw1").value;
   var letter = document.getElementById("letter");
   var capital = document.getElementById("capital");
   var number = document.getElementById("number");
@@ -778,8 +775,10 @@ text-align: justify;
       length.classList.remove("valid");
       length.classList.add("invalid");
     }
+
+   
   }
-  </script>
+</script>
 
 
 
